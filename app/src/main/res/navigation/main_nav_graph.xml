@@ -1,0 +1,25 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    android:label="SplashScreenFragment"
+    app:startDestination="@id/SplashScreenFragment">
+    <fragment
+        android:id="@+id/SplashScreenFragment"
+        android:name="br.com.leeoandradee.netflixclone.splashscreen.SplashScreenFragment"
+        android:label="SplashScreenFragment"
+        tools:layout="@layout/fragment_splash_screen">
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="https://www.netflix.com.br/splashScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="br.com.leeoandradee.netflixclone.login.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="https://www.netflix.com.br/login" />
+    </fragment>
+</navigation>
